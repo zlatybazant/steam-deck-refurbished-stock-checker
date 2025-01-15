@@ -26,9 +26,9 @@ Before using this script, ensure the following dependencies are installed:
     cd steam-deck-stock-checker
     ```
 2. Set up your Discord Webhook URL:
-    - In checker.py, replace the placeholder webhook_url with your actual Discord webhook URL:
+    - Create 'env.py' and pass below env variable and 'YOUR_DISCORD_WEBHOOK_URL' with your actual Discord webhook URL:
     ```python
-    webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
+    DISCORD_WEBHOOK_URL = 'YOUR_DISCORD_WEBHOOK_URL'
     ```
 3. Set permissions and scheduling:
     - Ensure `script.sh` is executable:
@@ -37,7 +37,7 @@ Before using this script, ensure the following dependencies are installed:
     ```
     - Add `script.sh` to a cron job to check for stock periodically (every 5 minutes in this example):
     ```sh
-    */5 * * * * /bin/bash /path/to/steam-deck-stock-checker/script.sh
+    */5 * * * * /path/to/steam-deck-refurbished-stock-checker/script.sh >> /path/to/steam-deck-refurbished-stock-checker/logfile.log 2>&1
     ```
 
 ## Disclaimer

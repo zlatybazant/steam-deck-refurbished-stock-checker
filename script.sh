@@ -1,3 +1,3 @@
 #!/bin/bash
-
-python3 /root/steam_deck_stock_checker/checker.py
+source /home/simonohm/devel/steam-deck-refurbished-stock-checker/deck_venv/bin/activate
+python3 /home/simonohm/devel/steam-deck-refurbished-stock-checker/checker.py

@@ -1,0 +1,4 @@
+deck_venv/
+logfile.log
+env.py
+__pycache__/
