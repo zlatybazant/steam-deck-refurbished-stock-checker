@@ -40,6 +40,11 @@ Before using this script, ensure the following dependencies are installed:
     */5 * * * * /path/to/steam-deck-refurbished-stock-checker/script.sh >> /path/to/steam-deck-refurbished-stock-checker/logfile.log 2>&1
     ```
 
+    - Add logfile removal to a cron job every day:
+    ```sh
+    0 0 * * * rm -f /path/to/steam-deck-refurbished-stock-checker/logfile.log
+    ```
+
 ## Disclaimer
 
 This script is provided "as is" for personal use. Be aware of website scraping policies and use responsibly.
